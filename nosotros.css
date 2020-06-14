@@ -1,0 +1,35 @@
+
+#nosotros h4 {
+    text-align: center;
+    color: seashell;
+}
+#nosotros h3 {
+    text-align: center;
+    color: springgreen;
+}
+#nosotros .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+#nosotros article {
+    margin: 15px;
+    }
+#nosotros img {
+        width: 100%;
+        max-width: 280px;
+        height: 180px;
+        border-radius: 0%;
+        border: 3px solid springgreen;
+    }
+}
+@media screen and (min-width:480px) {
+    #nosotros img {
+        width: 40%;
+    }
+}
+@media screen and (min-width:1024px) {
+    #nosotros article{
+        width: auto;
+    }
+}

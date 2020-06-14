@@ -1,0 +1,39 @@
+#info {
+    background: springgreen;
+    text-align: center;
+    padding: 20px;
+}
+#info h3 {color: white;
+    font-size: 18px; text-align: center;
+    background: seagreen;
+    font-family: 'Roboto Slab', serif;
+}
+    
+#info h4 {color: black;}
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-music {
+    margin: 20px;
+}
+.info-music img {
+    
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 100%;
+        max-width: 200px;
+        height: 200px;
+}
+@media screen and (min-width:480px) {
+    .info-music {
+        width: 40%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .info-music {
+        width: auto;
+    }
+}

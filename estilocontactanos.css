@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Monoton&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: url(imagenes/b.jpg);
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background:#333;
+    color:springgreen;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+    font-family:'Monoton', cursive;
+      }
+header .contenedor{
+    display: table;
+}
+ 
+#menu-bar{
+    display: none;
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.menu a{
+    display: block;
+    color:white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.menu a:hover {
+    background: springgreen
+}
+#menu-bar:checked ~ .menu{
+    transform: translate(0%);
+}
+
+#contactanos {
+    margin-top: 100px;
+    display: block;
+    
+}
+.contenedor .form .form-header .form-title {
+    font-weight: 2px;
+    font-family: sans-serif;
+    color: springgreen;
+    text-align: center;
+    padding: 0 ;
+}
+.contenedor .form .form-header .form-title span {
+    color: #ffffff;
+}
+.contenedor .form {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 550px;
+    margin-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+    padding: 30px 55px;
+    border-radius: 5px;
+   
+}
+.contenedor .form .form-label {
+    
+    color: springgreen;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    
+   
+    }
+.contenedor .form .form-input, .form-textarea {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid springgreen;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    .contenedor .form .form-textarea {
+        resize: vertical;
+        max-height: 150px;
+        min-height: 50px;
+    }
+    .contenedor .form .btn-submit {
+        width: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        outline: none;
+        background: springgreen;
+        font-size: 16px;
+        border: none;
+        color: white;
+        padding: 15px 0;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    .contenedor .form .btn-submit:hover {
+        background: seagreen;
+    }
+    @media (min-width:1024px) {
+        .menu {
+            position: static;
+            width: auto;
+            height: auto;
+            transform: translateX(0%);
+            float: right;
+            display: flex;
+        }
+            .menu a {
+            border: none;
+        }
+        header label {
+            display: none;
+        }
+    }
+    footer .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+    
+    .copy {
+        font-size: 20px;
+    }
+    
+    .sociales {
+        width: 100px;
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .sociales a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    @media screen and (min-width:768px) {
+        .sociales {
+            width: auto;
+        }
+        footer .contenedor {
+            justify-content: space-between;
+            color: white;
+        }
+        @media screen and (min-width:1024px) {
+            .contenedor {width: 85%;
+            }
+    }
+    @media screen and (min-width:480px) {
+        .copy p {
+            width: auto;
+            color: white;
+        }
+    
